@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            BasicCardView(image: Image("card_image"), cardDetails: "This is a basic card")
+        }
     }
 }
 
