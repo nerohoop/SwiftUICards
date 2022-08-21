@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF6364CB28A1C236000F4A1F /* BasicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CA28A1C236000F4A1F /* BasicCardView.swift */; };
+		FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CA28A1C236000F4A1F /* BasicCard.swift */; };
 		FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CC28A1C63E000F4A1F /* Avatar.swift */; };
 		FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CE28A1C8F3000F4A1F /* MediaView.swift */; };
 		FF6364D228A1CDF2000F4A1F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364D128A1CDF2000F4A1F /* Button.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF6364CA28A1C236000F4A1F /* BasicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCardView.swift; sourceTree = "<group>"; };
+		FF6364CA28A1C236000F4A1F /* BasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCard.swift; sourceTree = "<group>"; };
 		FF6364CC28A1C63E000F4A1F /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		FF6364CE28A1C8F3000F4A1F /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 		FF6364D128A1CDF2000F4A1F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -43,12 +43,19 @@
 		FF6364D028A1C901000F4A1F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FF6364CA28A1C236000F4A1F /* BasicCardView.swift */,
 				FF6364CE28A1C8F3000F4A1F /* MediaView.swift */,
 				FF6364CC28A1C63E000F4A1F /* Avatar.swift */,
 				FF6364D128A1CDF2000F4A1F /* Button.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FF8262E328B27F4800D8E913 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				FF6364CA28A1C236000F4A1F /* BasicCard.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		FFE108CF289FDCB000973B5D = {
@@ -70,6 +77,7 @@
 		FFE108DA289FDCB000973B5D /* CardUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FF8262E328B27F4800D8E913 /* Cards */,
 				FF6364D028A1C901000F4A1F /* Components */,
 				FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */,
 				FFE108DD289FDCB000973B5D /* ContentView.swift */,
@@ -159,7 +167,7 @@
 			files = (
 				FFE108DE289FDCB000973B5D /* ContentView.swift in Sources */,
 				FF6364D228A1CDF2000F4A1F /* Button.swift in Sources */,
-				FF6364CB28A1C236000F4A1F /* BasicCardView.swift in Sources */,
+				FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */,
 				FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
 				FFE108DC289FDCB000973B5D /* CardUIComponentsApp.swift in Sources */,
