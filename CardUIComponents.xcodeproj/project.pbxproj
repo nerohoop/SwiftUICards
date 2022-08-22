@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF309BC228B35A12002B7EF0 /* AvatarCard.swift */; };
 		FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CA28A1C236000F4A1F /* BasicCard.swift */; };
 		FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CC28A1C63E000F4A1F /* Avatar.swift */; };
 		FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CE28A1C8F3000F4A1F /* MediaView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF309BC228B35A12002B7EF0 /* AvatarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCard.swift; sourceTree = "<group>"; };
 		FF6364CA28A1C236000F4A1F /* BasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCard.swift; sourceTree = "<group>"; };
 		FF6364CC28A1C63E000F4A1F /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		FF6364CE28A1C8F3000F4A1F /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6364CA28A1C236000F4A1F /* BasicCard.swift */,
+				FF309BC228B35A12002B7EF0 /* AvatarCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */,
 				FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
+				FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */,
 				FFE108DC289FDCB000973B5D /* CardUIComponentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
