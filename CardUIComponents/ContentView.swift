@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                AvatarCard(title: "Yolanda", subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing...", avatar: Image("avatar_6"))
+                    .shadow(radius: 2)
+                    .listRowSeparator(.hidden)
+                    .padding([.bottom], 20)
+                
                 ProfileFollowCard(title: "Johny", profile: Image("avatar_5"), accessoryImage: Image(systemName: "phone.fill"))
                     .shadow(radius: 2)
                     .padding([.bottom], 20)

@@ -11,11 +11,11 @@ struct AvatarCard: View {
     var title: String
     var subtitle: String
     var avatar: Image
-    var iconImage: Image
+    var iconImage: Image?
     var accessoryClicked: (() -> Void) = {}
     
     var body: some View {
-        MediaView(title: title, subtitle: subtitle, avatar: avatar, iconImage: iconImage)
+        MediaView(title: title, subtitle: subtitle, avatar: avatar, iconImage: iconImage, lineLimit: 2)
     }
 }
 
