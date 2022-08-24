@@ -23,10 +23,6 @@ struct AvatarCard_Previews: PreviewProvider {
     static var previews: some View {
         AvatarCard(title: "Yolanda", subtitle: "Backend Development", avatar: Image("avatar_2"), iconImage: Image(systemName: "camera"))
             .frame(width: 360)
-            .background(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(.white)
-                    .shadow(radius: 2)
-            )
+            .shadow(radius: 2)
     }
 }

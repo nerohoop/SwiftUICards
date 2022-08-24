@@ -11,18 +11,30 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), cardDescription: "This is a basic card")
+                ProfileRightCard(title: "Julia Robert", subtitle: "frontend development", profile: Image("avatar_3"))
+                    .shadow(radius: 2)
+                    .padding([.bottom], 20)
                     .listRowSeparator(.hidden)
-                    .padding([.top, .bottom], 40)
                 
-                AvatarCard(title: "Yolanda", subtitle: "Backend Development", avatar: Image("avatar_2"), iconImage: Image(systemName: "camera"))
-                    .background(
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(.white)
-                            .shadow(radius: 4)
-                    )
+                ProfileCard(title: "Julia Robert", subtitle: "frontend development", profile: Image("avatar_3"))
+                    .shadow(radius: 2)
+                    .padding([.bottom], 20)
+                    .listRowSeparator(.hidden)
+                
+                DarkAvatarCard(title: "Yolanda", subtitle: "Backend Development", avatar: Image("avatar_2"), iconImage: Image(systemName: "plus"))
+                    .shadow(radius: 2)
                     .listRowSeparator(.hidden)
                     .padding([.bottom], 20)
+                
+                AvatarCard(title: "Yolanda", subtitle: "Backend Development", avatar: Image("avatar_2"), iconImage: Image(systemName: "camera"))
+                    .shadow(radius: 2)
+                    .listRowSeparator(.hidden)
+                    .padding([.bottom], 20)
+                
+                BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), cardDescription: "This is a basic card")
+                    .listRowSeparator(.hidden)
+                    .padding([.bottom], 20)
+                    .shadow(radius: 2)
             }
             .navigationTitle("Card Examples")
             .frame( maxWidth: .infinity)

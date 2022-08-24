@@ -12,6 +12,7 @@ struct MediaView: View {
     var subtitle: String
     var avatar: Image
     var iconImage: Image?
+    var isDarkMode: Bool = false
     var accessoryClicked: (() -> Void) = {}
     
     private var accessory: Button<Image>? {
@@ -26,8 +27,25 @@ struct MediaView: View {
         }
     }
     
+    private var titleColor: Color {
+        return isDarkMode ? .white : .black
+    }
+    
+    private var subtitleColor: Color {
+        return isDarkMode ? .white : .gray
+    }
+    
+    private var backgroundColor: Color {
+        return isDarkMode ? .black : .white
+    }
+    
+    private var accessoryColor: Color {
+        return isDarkMode ? .white : .black
+    }
+    
     private let avatarSpacing: CGFloat = 10
     private let padding: CGFloat = 25
+    private let cornerRadius: CGFloat = 10
     
     var body: some View {
         HStack(alignment: .center, spacing: avatarSpacing) {
@@ -37,30 +55,36 @@ struct MediaView: View {
                 Text(title)
                     .font(.title2)
                     .bold()
+                    .foregroundColor(titleColor)
                 
                 Text(subtitle)
                     .font(.body)
-                    .foregroundColor(.gray)
+                    .foregroundColor(subtitleColor)
             }
             
             Spacer()
             
             accessory
-                .foregroundColor(.black)
+                .foregroundColor(accessoryColor)
                 .font(Font.title3.weight(.medium))
         }
         .padding(padding)
+        .background(backgroundColor)
+        .cornerRadius(cornerRadius)
     }
 }
 
 struct MediaView_Previews: PreviewProvider {
     static var previews: some View {
-        MediaView(title: "Frank Esteban", subtitle: "Web Development", avatar: Image("avatar"), iconImage: Image(systemName: "camera"))
-            .frame(width: 360)
-            .background(
-                RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(.white)
-                    .shadow(radius: 2)
-            )
+        VStack(spacing: 20) {
+            MediaView(title: "Frank Esteban", subtitle: "Web Development", avatar: Image("avatar"), iconImage: Image(systemName: "camera"), isDarkMode: false)
+                .frame(width: 360)
+                .shadow(radius: 2)
+
+            MediaView(title: "Frank Esteban", subtitle: "Web Development", avatar: Image("avatar"), iconImage: Image(systemName: "camera"), isDarkMode: true)
+                .frame(width: 360)
+                .shadow(radius: 2)
+
+        }
     }
 }

@@ -33,13 +33,9 @@ struct BasicCard: View {
                 .foregroundColor(.gray)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                 .padding(descriptionPadding)
-                
         }
-        .background(
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(.white)
-                .shadow(radius: shadowRadius)
-        )
+        .background(.white)
+        .cornerRadius(cornerRadius)
     }
 }
 
@@ -47,5 +43,6 @@ struct BasicCard_Previews: PreviewProvider {
     static var previews: some View {
         BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), cardDescription: "This is a basic card")
             .frame(width: 360, height: 367)
+            .shadow(radius: 2)
     }
 }

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF06F34928B5113B00B715D1 /* DarkAvatarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */; };
 		FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF309BC228B35A12002B7EF0 /* AvatarCard.swift */; };
 		FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CA28A1C236000F4A1F /* BasicCard.swift */; };
 		FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CC28A1C63E000F4A1F /* Avatar.swift */; };
 		FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CE28A1C8F3000F4A1F /* MediaView.swift */; };
 		FF6364D228A1CDF2000F4A1F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364D128A1CDF2000F4A1F /* Button.swift */; };
+		FF957AF228B53DC7005BE612 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF957AF128B53DC7005BE612 /* ProfileCard.swift */; };
+		FFA015C728B54104009DDA62 /* ProfileRightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA015C628B54104009DDA62 /* ProfileRightCard.swift */; };
 		FFE108DC289FDCB000973B5D /* CardUIComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */; };
 		FFE108DE289FDCB000973B5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE108DD289FDCB000973B5D /* ContentView.swift */; };
 		FFE108E0289FDCB200973B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE108DF289FDCB200973B5D /* Assets.xcassets */; };
@@ -19,11 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkAvatarCard.swift; sourceTree = "<group>"; };
 		FF309BC228B35A12002B7EF0 /* AvatarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCard.swift; sourceTree = "<group>"; };
 		FF6364CA28A1C236000F4A1F /* BasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCard.swift; sourceTree = "<group>"; };
 		FF6364CC28A1C63E000F4A1F /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		FF6364CE28A1C8F3000F4A1F /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 		FF6364D128A1CDF2000F4A1F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FF957AF128B53DC7005BE612 /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
+		FFA015C628B54104009DDA62 /* ProfileRightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRightCard.swift; sourceTree = "<group>"; };
 		FFE108D8289FDCB000973B5D /* CardUIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardUIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIComponentsApp.swift; sourceTree = "<group>"; };
 		FFE108DD289FDCB000973B5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 			children = (
 				FF6364CA28A1C236000F4A1F /* BasicCard.swift */,
 				FF309BC228B35A12002B7EF0 /* AvatarCard.swift */,
+				FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */,
+				FF957AF128B53DC7005BE612 /* ProfileCard.swift */,
+				FFA015C628B54104009DDA62 /* ProfileRightCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -170,10 +179,13 @@
 			files = (
 				FFE108DE289FDCB000973B5D /* ContentView.swift in Sources */,
 				FF6364D228A1CDF2000F4A1F /* Button.swift in Sources */,
+				FF06F34928B5113B00B715D1 /* DarkAvatarCard.swift in Sources */,
 				FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */,
 				FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */,
+				FF957AF228B53DC7005BE612 /* ProfileCard.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
 				FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */,
+				FFA015C728B54104009DDA62 /* ProfileRightCard.swift in Sources */,
 				FFE108DC289FDCB000973B5D /* CardUIComponentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
