@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF06F34928B5113B00B715D1 /* DarkAvatarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */; };
 		FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF309BC228B35A12002B7EF0 /* AvatarCard.swift */; };
+		FF547D9A28B5C80D00A03FBF /* BoldProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF547D9928B5C80D00A03FBF /* BoldProfileCard.swift */; };
 		FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CA28A1C236000F4A1F /* BasicCard.swift */; };
 		FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CC28A1C63E000F4A1F /* Avatar.swift */; };
 		FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6364CE28A1C8F3000F4A1F /* MediaView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkAvatarCard.swift; sourceTree = "<group>"; };
 		FF309BC228B35A12002B7EF0 /* AvatarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCard.swift; sourceTree = "<group>"; };
+		FF547D9928B5C80D00A03FBF /* BoldProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldProfileCard.swift; sourceTree = "<group>"; };
 		FF6364CA28A1C236000F4A1F /* BasicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCard.swift; sourceTree = "<group>"; };
 		FF6364CC28A1C63E000F4A1F /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		FF6364CE28A1C8F3000F4A1F /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FF06F34828B5113B00B715D1 /* DarkAvatarCard.swift */,
 				FF957AF128B53DC7005BE612 /* ProfileCard.swift */,
 				FFA015C628B54104009DDA62 /* ProfileRightCard.swift */,
+				FF547D9928B5C80D00A03FBF /* BoldProfileCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -89,10 +92,10 @@
 		FFE108DA289FDCB000973B5D /* CardUIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				FF8262E328B27F4800D8E913 /* Cards */,
-				FF6364D028A1C901000F4A1F /* Components */,
 				FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */,
 				FFE108DD289FDCB000973B5D /* ContentView.swift */,
+				FF8262E328B27F4800D8E913 /* Cards */,
+				FF6364D028A1C901000F4A1F /* Components */,
 				FFE108DF289FDCB200973B5D /* Assets.xcassets */,
 				FFE108E1289FDCB200973B5D /* Preview Content */,
 			);
@@ -183,6 +186,7 @@
 				FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */,
 				FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */,
 				FF957AF228B53DC7005BE612 /* ProfileCard.swift in Sources */,
+				FF547D9A28B5C80D00A03FBF /* BoldProfileCard.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
 				FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */,
 				FFA015C728B54104009DDA62 /* ProfileRightCard.swift in Sources */,
