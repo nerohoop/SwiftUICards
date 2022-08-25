@@ -41,7 +41,11 @@ struct BasicCard: View {
 
 struct BasicCard_Previews: PreviewProvider {
     static var previews: some View {
-        BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), cardDescription: "This is a basic card")
+        BasicCard(avatarImage: Image("avatar"),
+                  title: "Frank Esteban",
+                  subtitle: "Web Development",
+                  contentImage: Image("card_image"),
+                  cardDescription: "This is a basic card")
             .frame(width: 360, height: 367)
             .shadow(radius: 2)
     }

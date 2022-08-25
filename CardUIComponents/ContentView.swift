@@ -11,6 +11,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                ArticleCard()
+                    .shadow(radius: 4)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .listRowSeparator(.hidden)
+                    .padding([.bottom], 20)
+                    .buttonStyle(PlainButtonStyle())
+                
                 MusicPlayerPreviewCard(title: "The Weeknd", subtitle: "Take My Breath ( Official release )", profile: Image("cover"))
                     .shadow(radius: 2)
                     .listRowSeparator(.hidden)
@@ -64,12 +71,12 @@ struct ContentView: View {
                     .listRowSeparator(.hidden)
                     .padding([.bottom], 20)
                     .buttonStyle(PlainButtonStyle())
-                
-                BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), cardDescription: "This is a basic card")
-                    .listRowSeparator(.hidden)
-                    .padding([.bottom], 20)
-                    .shadow(radius: 2)
-                    .buttonStyle(PlainButtonStyle())
+                                
+//                BasicCard(avatarImage: Image("avatar"), title: "Frank Esteban", subtitle: "Web Development", contentImage: Image("card_image"), contentText: "test", cardDescription: "This is a basic card")
+//                    .listRowSeparator(.hidden)
+//                    .padding([.bottom], 20)
+//                    .shadow(radius: 2)
+//                    .buttonStyle(PlainButtonStyle())
             }
             .navigationTitle("Card Examples")
             .frame( maxWidth: .infinity)
