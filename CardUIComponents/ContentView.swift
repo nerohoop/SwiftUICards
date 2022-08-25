@@ -11,6 +11,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                MusicPlayerPreviewCard(title: "The Weeknd", subtitle: "Take My Breath ( Official release )", profile: Image("cover"))
+                    .shadow(radius: 2)
+                    .listRowSeparator(.hidden)
+                    .padding([.bottom], 20)
+                    .buttonStyle(PlainButtonStyle())
+                
                 MusicPlayerCard(coverImage: Image("avatar_3"), title: "Sunshine - Mix", subtitle: "Lookee Stefane")
                     .shadow(radius: 2)
                     .listRowSeparator(.hidden)
