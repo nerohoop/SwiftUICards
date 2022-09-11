@@ -12,6 +12,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 Group {
+                    CommerceCard()
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
+                    
                     PostCard()
                         .listRowSeparator(.hidden)
                         .padding([.bottom], 20)

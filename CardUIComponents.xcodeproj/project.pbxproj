@@ -28,6 +28,7 @@
 		FFE108E3289FDCB200973B5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE108E2289FDCB200973B5D /* Preview Assets.xcassets */; };
 		FFF77C4628CE4925004E4AEA /* OrderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF77C4528CE4925004E4AEA /* OrderCard.swift */; };
 		FFF77C4928CE7A83004E4AEA /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF77C4828CE7A83004E4AEA /* PostCard.swift */; };
+		FFF77C4B28CE82D2004E4AEA /* CommerceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF77C4A28CE82D2004E4AEA /* CommerceCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		FFE108E2289FDCB200973B5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFF77C4528CE4925004E4AEA /* OrderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCard.swift; sourceTree = "<group>"; };
 		FFF77C4828CE7A83004E4AEA /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		FFF77C4A28CE82D2004E4AEA /* CommerceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				FFCC261128BB0D2B00CB8A09 /* TitleProgressCard.swift */,
 				FFF77C4528CE4925004E4AEA /* OrderCard.swift */,
 				FFF77C4828CE7A83004E4AEA /* PostCard.swift */,
+				FFF77C4A28CE82D2004E4AEA /* CommerceCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				FFCA283328B7586D0035B498 /* ArticleCard.swift in Sources */,
 				FF547D9C28B5D16500A03FBF /* ProfileFollowCard.swift in Sources */,
 				FF6364CD28A1C63E000F4A1F /* Avatar.swift in Sources */,
+				FFF77C4B28CE82D2004E4AEA /* CommerceCard.swift in Sources */,
 				FF957AF228B53DC7005BE612 /* ProfileCard.swift in Sources */,
 				FF547D9A28B5C80D00A03FBF /* BoldProfileCard.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
