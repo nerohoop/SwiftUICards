@@ -12,7 +12,15 @@ struct ContentView: View {
         NavigationView {
             List {
                 Group {
+                    PostCard()
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
+                    
                     OrderCard()
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
                     
                     TitleProgressCard(backgroundColor: Color(0x8DD4EB))
                         .shadow(radius: 4)

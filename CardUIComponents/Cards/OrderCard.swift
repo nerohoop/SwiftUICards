@@ -67,7 +67,7 @@ struct OrderCard: View {
         }
         .background(.white)
         .cornerRadius(20)
-        .shadow(radius: 1)
+        .shadow(radius: 4)
     }
 }
 
