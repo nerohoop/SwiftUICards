@@ -20,10 +20,13 @@
 		FFA015C728B54104009DDA62 /* ProfileRightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA015C628B54104009DDA62 /* ProfileRightCard.swift */; };
 		FFCA283028B74E990035B498 /* MusicPlayerPreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA282F28B74E990035B498 /* MusicPlayerPreviewCard.swift */; };
 		FFCA283328B7586D0035B498 /* ArticleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCA283228B7586D0035B498 /* ArticleCard.swift */; };
+		FFCC261228BB0D2B00CB8A09 /* TitleProgressCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC261128BB0D2B00CB8A09 /* TitleProgressCard.swift */; };
+		FFCC261428BB0D9600CB8A09 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC261328BB0D9600CB8A09 /* Color+Hex.swift */; };
 		FFE108DC289FDCB000973B5D /* CardUIComponentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */; };
 		FFE108DE289FDCB000973B5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE108DD289FDCB000973B5D /* ContentView.swift */; };
 		FFE108E0289FDCB200973B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE108DF289FDCB200973B5D /* Assets.xcassets */; };
 		FFE108E3289FDCB200973B5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE108E2289FDCB200973B5D /* Preview Assets.xcassets */; };
+		FFF77C4628CE4925004E4AEA /* OrderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF77C4528CE4925004E4AEA /* OrderCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +43,14 @@
 		FFA015C628B54104009DDA62 /* ProfileRightCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRightCard.swift; sourceTree = "<group>"; };
 		FFCA282F28B74E990035B498 /* MusicPlayerPreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerPreviewCard.swift; sourceTree = "<group>"; };
 		FFCA283228B7586D0035B498 /* ArticleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCard.swift; sourceTree = "<group>"; };
+		FFCC261128BB0D2B00CB8A09 /* TitleProgressCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleProgressCard.swift; sourceTree = "<group>"; };
+		FFCC261328BB0D9600CB8A09 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		FFE108D8289FDCB000973B5D /* CardUIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardUIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUIComponentsApp.swift; sourceTree = "<group>"; };
 		FFE108DD289FDCB000973B5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFE108DF289FDCB200973B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE108E2289FDCB200973B5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFF77C4528CE4925004E4AEA /* OrderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 				FF547D9D28B5D64000A03FBF /* MusicPlayerCard.swift */,
 				FFCA282F28B74E990035B498 /* MusicPlayerPreviewCard.swift */,
 				FFCA283228B7586D0035B498 /* ArticleCard.swift */,
+				FFCC261128BB0D2B00CB8A09 /* TitleProgressCard.swift */,
+				FFF77C4528CE4925004E4AEA /* OrderCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -112,11 +120,12 @@
 		FFE108DA289FDCB000973B5D /* CardUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FFE108DF289FDCB200973B5D /* Assets.xcassets */,
 				FFE108DB289FDCB000973B5D /* CardUIComponentsApp.swift */,
 				FFE108DD289FDCB000973B5D /* ContentView.swift */,
 				FF8262E328B27F4800D8E913 /* Cards */,
 				FF6364D028A1C901000F4A1F /* Components */,
-				FFE108DF289FDCB200973B5D /* Assets.xcassets */,
+				FFF77C4728CE4DCB004E4AEA /* Utils */,
 				FFE108E1289FDCB200973B5D /* Preview Content */,
 			);
 			path = CardUIComponents;
@@ -128,6 +137,14 @@
 				FFE108E2289FDCB200973B5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFF77C4728CE4DCB004E4AEA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC261328BB0D9600CB8A09 /* Color+Hex.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFCC261428BB0D9600CB8A09 /* Color+Hex.swift in Sources */,
 				FFE108DE289FDCB000973B5D /* ContentView.swift in Sources */,
 				FF6364D228A1CDF2000F4A1F /* CustomButton.swift in Sources */,
 				FF06F34928B5113B00B715D1 /* DarkAvatarCard.swift in Sources */,
+				FFCC261228BB0D2B00CB8A09 /* TitleProgressCard.swift in Sources */,
 				FF6364CB28A1C236000F4A1F /* BasicCard.swift in Sources */,
 				FFCA283328B7586D0035B498 /* ArticleCard.swift in Sources */,
 				FF547D9C28B5D16500A03FBF /* ProfileFollowCard.swift in Sources */,
@@ -210,6 +229,7 @@
 				FF957AF228B53DC7005BE612 /* ProfileCard.swift in Sources */,
 				FF547D9A28B5C80D00A03FBF /* BoldProfileCard.swift in Sources */,
 				FF6364CF28A1C8F3000F4A1F /* MediaView.swift in Sources */,
+				FFF77C4628CE4925004E4AEA /* OrderCard.swift in Sources */,
 				FFCA283028B74E990035B498 /* MusicPlayerPreviewCard.swift in Sources */,
 				FF309BC328B35A12002B7EF0 /* AvatarCard.swift in Sources */,
 				FFA015C728B54104009DDA62 /* ProfileRightCard.swift in Sources */,
