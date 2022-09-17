@@ -28,19 +28,19 @@ struct ContentView: View {
                         .buttonStyle(PlainButtonStyle())
                     
                     TitleProgressCard(backgroundColor: Color(0x8DD4EB))
-                        .shadow(radius: 4)
+                        .shadow(radius: 2)
                         .listRowSeparator(.hidden)
                         .padding([.bottom], 20)
                         .buttonStyle(PlainButtonStyle())
                     
                     TitleProgressCard()
-                        .shadow(radius: 4)
+                        .shadow(radius: 2)
                         .listRowSeparator(.hidden)
                         .padding([.bottom], 20)
                         .buttonStyle(PlainButtonStyle())
                     
                     ArticleCard()
-                        .shadow(radius: 4)
+                        .shadow(radius: 2)
                         .fixedSize(horizontal: false, vertical: true)
                         .listRowSeparator(.hidden)
                         .padding([.bottom], 20)
