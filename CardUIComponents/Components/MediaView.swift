@@ -14,6 +14,7 @@ struct MediaView: View {
     var iconImage: Image?
     var isDarkMode: Bool = false
     var lineLimit: Int = 0
+    var accessoryButton: CustomButton?
     var accessoryClicked: (() -> Void) = {}
     
     private var accessory: Button<Image>? {
@@ -69,6 +70,8 @@ struct MediaView: View {
             accessory
                 .foregroundColor(accessoryColor)
                 .font(Font.title3.weight(.medium))
+            
+            accessoryButton
         }
         .padding(padding)
         .background(backgroundColor)
@@ -84,6 +87,10 @@ struct MediaView_Previews: PreviewProvider {
                 .shadow(radius: 2)
 
             MediaView(title: "Frank Esteban", subtitle: "Web Development", avatar: Image("avatar"), iconImage: Image(systemName: "camera"), isDarkMode: true)
+                .frame(width: 360)
+                .shadow(radius: 2)
+            
+            MediaView(title: "Frank Esteban", subtitle: "Web Development", avatar: Image("avatar"), accessoryButton: CustomButton(text: "Follow", type: .outline, size: .small))
                 .frame(width: 360)
                 .shadow(radius: 2)
             

@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum AvatarSize {
-    case small, medium, large
+    case small, medium, large, xlarge
 }
 
 struct Avatar: View {
@@ -23,6 +23,8 @@ struct Avatar: View {
             return 60.0
         case .large:
             return 80.0
+        case .xlarge:
+            return 100.0
         }
     }
     
@@ -34,6 +36,8 @@ struct Avatar: View {
             return 60.0
         case .large:
             return 80.0
+        case .xlarge:
+            return 100.0
         }
     }
     
@@ -48,6 +52,7 @@ struct Avatar: View {
 struct Avatar_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
+            Avatar(image: Image("avatar"), size: .xlarge)
             Avatar(image: Image("avatar"), size: .large)
             Avatar(image: Image("avatar"), size: .medium)
             Avatar(image: Image("avatar"), size: .small)

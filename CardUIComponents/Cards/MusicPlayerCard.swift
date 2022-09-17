@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct MusicPlayerCard: View {
-    var coverImage: Image
-    var title: String
-    var subtitle: String
+    var coverImage: Image = Image("avatar_3")
+    var title: String = "Sunshine - Mix"
+    var subtitle: String = "Lookee Stefane"
+    var isDarkMode: Bool = false
+    
+    private var textColor: Color {
+        return isDarkMode ? .white : .black
+    }
+    
+    private var subtitleTextColor: Color {
+        return isDarkMode ? .gray : .gray
+    }
+    
+    private var backgroundColor: Color {
+        return isDarkMode ? .black : .white
+    }
+    
+    private var buttonColor: Color {
+        return isDarkMode ? .white : .black
+    }
+    
+    private var progressColor: Color {
+        return isDarkMode ? .white : .purple
+    }
     
     var body: some View {
         VStack {
@@ -37,10 +58,12 @@ struct MusicPlayerCard: View {
             
             VStack {
                 Text(title)
+                    .foregroundColor(textColor)
                     .font(.title)
                     .bold()
                 
                 Text(subtitle)
+                    .foregroundColor(subtitleTextColor)
                     .font(.body)
                     .foregroundColor(.gray)
             }
@@ -51,7 +74,7 @@ struct MusicPlayerCard: View {
                     .font(.caption)
                 
                 ProgressView("", value: 10, total: 100)
-                    .tint(.purple)
+                    .tint(progressColor)
                     .offset(y: -10)
                 
                 Text("02:04")
@@ -66,7 +89,7 @@ struct MusicPlayerCard: View {
                     print("repeat")
                 } label: {
                     Image(systemName: "repeat")
-                        .foregroundColor(.black)
+                        .foregroundColor(buttonColor)
                         .font(.title3)
                 }
                 
@@ -74,7 +97,7 @@ struct MusicPlayerCard: View {
                     print("backward")
                 } label: {
                     Image(systemName:  "backward.fill")
-                        .foregroundColor(.black)
+                        .foregroundColor(buttonColor)
                         .font(.title2)
                 }
                 
@@ -91,7 +114,7 @@ struct MusicPlayerCard: View {
                     print("forward")
                 } label: {
                     Image(systemName: "forward.fill")
-                        .foregroundColor(.black)
+                        .foregroundColor(buttonColor)
                         .font(.title2)
                 }
                 
@@ -99,7 +122,7 @@ struct MusicPlayerCard: View {
                     print("shuffle")
                 } label: {
                     Image(systemName: "shuffle")
-                        .foregroundColor(.black)
+                        .foregroundColor(buttonColor)
                         .font(.title3)
                 }
             }
@@ -108,15 +131,15 @@ struct MusicPlayerCard: View {
             Spacer()
                 .frame(height: 30)
         }
-        .background(.white)
+        .background(backgroundColor)
         .cornerRadius(20)
-        
+        .shadow(radius: 2)
     }
 }
 
 struct MusicPlayerCard_Previews: PreviewProvider {
     static var previews: some View {
-        MusicPlayerCard(coverImage: Image("avatar_3"), title: "Sunshine - Mix", subtitle: "Lookee Stefane")
+        MusicPlayerCard()
             .frame(width: 360, height: 480)
             .shadow(radius: 2)
     }

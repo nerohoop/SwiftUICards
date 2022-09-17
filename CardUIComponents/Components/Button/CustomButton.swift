@@ -24,6 +24,7 @@ struct CustomButton: View {
     var type: ButtonType? = .normal
     var size: ButtonSize? = .medium
     var cornerType: ButtonCornerType? = .normal
+    var bgColor: Color?
     var clicked: (() -> Void) = {}
     
     private var font: Font {
@@ -104,7 +105,7 @@ struct CustomButton: View {
         .font(font)
         .padding(padding)
         .foregroundColor(foregroundColor)
-        .background(backgroundColor)
+        .background(bgColor ?? backgroundColor)
         .cornerRadius(cornerRadius)
         .overlay(
             RoundedRectangle(cornerRadius: cornerRadius)

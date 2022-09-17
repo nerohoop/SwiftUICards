@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             List {
                 Group {
+                    HeaderCard()
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
+                    
+                    MusicPlayerCard(isDarkMode: true)
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
+                    
+                    FollowCard()
+                        .listRowSeparator(.hidden)
+                        .padding([.bottom], 20)
+                        .buttonStyle(PlainButtonStyle())
+                    
                     CommerceCard()
                         .listRowSeparator(.hidden)
                         .padding([.bottom], 20)
